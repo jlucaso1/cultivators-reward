@@ -1,0 +1,8 @@
+{
+	"required": true,
+	"package": "com.jlucaso.cultivatorsreward.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
