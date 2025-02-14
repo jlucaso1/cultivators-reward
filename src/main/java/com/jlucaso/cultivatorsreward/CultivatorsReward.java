@@ -21,7 +21,7 @@ public class CultivatorsReward implements ModInitializer {
             @SuppressWarnings("unchecked")
             Event<CropHarvestedCallback> sharedEvent = (Event<CropHarvestedCallback>) FabricLoader.getInstance()
                     .getObjectShare()
-                    .get("cropharvestserver:crop_harvested");
+                    .get(CropHarvestedCallback.EVENT_KEY);
             if (sharedEvent != null) {
                 sharedEvent.register(
                         (CropHarvestedCallback) (player, blockPos, state, blockEntity) -> {
